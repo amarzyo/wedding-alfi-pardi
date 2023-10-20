@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playpen+Sans:wght@600&family=Tangerine:wght@400;700&display=swap");
+.font-1 {
+  font-family: "Tangerine", cursive;
+}
+
+.font-2 {
+  font-family: "Playpen Sans", cursive;
+}
+
+.font-3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.myModal {
+  background-image: url("img/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hero {
+  background-image: url("img/wedding.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}

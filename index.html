@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alfi & Pardi Wedding</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content ">
+                <div class="modal-body text-center myModal ">
+                    <p class="fs-5 fw-bold font-2 text-end">Wedding Invitation</p>
+                    <p class="h1 fw-bold font-1 my-5" style="font-size: 50px;">Alfiaturrohmah <br> & <br> Supardi</p>
+                    <p class="h6 fw-bold font-2 mb-3">Akan melangsungkan pernikahan dalam:</p>
+                    <p class="h6 fw-bold font-2 mb-3 text-success" id="countdown"></p>
+                    <p class="h6 fw-bold font-2 mt-5">Mengharap Kehadiran Saudara/i</p>
+                    <p class="h6 fw-bold font-2 " style="font-size: 10px;">Maaf bila ada salah tulis nama</p>
+                    <p class="h6 fw-bold font-2 my-4">Alfi</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn bg-danger bg-gradient text-white mx-auto fw-bold"
+                        data-bs-dismiss="modal">Buka Undangan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-dark border-bottom border-body text-center" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <p class="h1 fw-bold font-2 text-center mt-4" style="font-size: 20px;">Wedding Invitation</p>
+            <p class="h1 fw-bold font-1 text-center" style="font-size: 50px;">Alfiaturrohmah <br> & <br> Supardi</p>
+        </div>
+    </section>
+
+    <section id="home" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                  <p class="font-2 h5 my-3 border bg-dark text-white py-2 rounded">Acara Pernikahan</p>
+                  <p class="font-3 fs-6 my-0">Diselenggarakan pada <br> Hari Rabu, 8 November 2023 <br> di Sampang, Cilacap</p>
+                  <p class="font-3" style="font-size: 10px;">Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+              </div>
+        </div>
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="text-center">
+                    <img src="/img/bg.jpeg" class="rounded-pill" alt="...">
+                  </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+    <!-- Modal onLoad  -->
+    <!-- <script>
+        // Fungsi untuk menampilkan modal saat halaman dimuat
+        window.onload = function () {
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+        }
+    </script> -->
+
+    <!-- Countdown -->
+    <script>
+        // Tanggal akhir yang ingin Anda hitung mundur
+        const endDate = new Date("2023-11-8 08:00:00").getTime();
+
+        // Memperbarui hitung mundur setiap 1 detik
+        const countdown = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = endDate - now;
+
+            // Menghitung hari, jam, menit, dan detik
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Menampilkan hasil di elemen dengan id "countdown"
+            const countdownElement = document.getElementById("countdown");
+            countdownElement.innerHTML = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
+
+            // Jika hitung mundur selesai, hentikan interval
+            if (distance < 0) {
+                clearInterval(countdown);
+                countdownElement.innerHTML = "Waktu hitung mundur telah berakhir!";
+            }
+        }, 1000); // Setiap 1 detik
+    </script>
+
+</body>
+
+</html>
