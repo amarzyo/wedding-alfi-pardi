@@ -12,11 +12,11 @@
 
 </head>
 
-<body>
+<body class="bg-light">
     <!-- Modal -->
     <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content ">
+            <div class="modal-content bg-light">
                 <div class="modal-body text-center myModal ">
                     <p class="fs-5 fw-bold font-2 text-end">Wedding Invitation</p>
                     <p class="h1 fw-bold font-1 my-5" style="font-size: 50px;">Alfiaturrohmah <br> & <br> Supardi</p>
@@ -27,7 +27,7 @@
                     <p class="h6 fw-bold font-2 my-4">Alfi</p>
                 </div>
                 <div class="modal-footer border-0">
-                    <button type="button" class="btn bg-danger bg-gradient text-white mx-auto fw-bold"
+                    <button type="button" class="btn bg-secondary bg-gradient text-light mx-auto fw-bold"
                         data-bs-dismiss="modal">Buka Undangan</button>
                 </div>
             </div>
@@ -35,7 +35,7 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar bg-dark border-bottom border-body text-center" data-bs-theme="dark">
+    <nav class="navbar bg-dark text-center" data-bs-theme="dark">
         <div class="container-fluid">
             <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,37 +46,84 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>                    
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="hero">
+    <section id="hero" class="text-dark">
         <div class="container">
-            <p class="h1 fw-bold font-2 text-center mt-4" style="font-size: 20px;">Wedding Invitation</p>
+            <p class="h1 fw-bold font-2 text-center pt-3" style="font-size: 20px;">Wedding Invitation</p>
             <p class="h1 fw-bold font-1 text-center" style="font-size: 50px;">Alfiaturrohmah <br> & <br> Supardi</p>
         </div>
     </section>
 
-    <section id="home" class="bg-light">
+    <section id="home" class="bg-dark text-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
-                  <p class="font-2 h5 my-3 border bg-dark text-white py-2 rounded">Acara Pernikahan</p>
-                  <p class="font-3 fs-6 my-0">Diselenggarakan pada <br> Hari Rabu, 8 November 2023 <br> di Sampang, Cilacap</p>
-                  <p class="font-3" style="font-size: 10px;">Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
-              </div>
-        </div>
-        <div class="container text-center">
-            <div class="row align-items-start">
-              <div class="col">
-                <div class="text-center">
-                    <img src="/img/bg.jpeg" class="rounded-pill" alt="...">
-                  </div>
-              </div>
+                    <p class="font-2 h5 my-3 border bg-light text-dark py-2 rounded">Muqodimah</p>
+                    <p class="text-light">Assalamu'alaikum Wr.Wb <br> Dengan memohon Rahmat dan Ridlo Allow
+                        ST, Kami bermaksud menyelenggarakan resepesi pernikahan kami.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="/img/bg.jpeg" class=" img-fluid rounded-pill my-0" alt="...">
+                    <p class="font-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, non.</p>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="/img/bg.jpeg" class=" img-fluid rounded-pill my-0" alt="...">
+                    <p class="font-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, non.</p>
+                </div>
             </div>
-          </div>
+    </section>
+
+    <section id="acara" class="text-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center my-1">
+                    <p class="font-2 h5 my-3 border bg-dark text-light py-2 rounded">Acara Pernikahan</p>
+                </div>
+
+                <div class="col-md-6 text-center my-1">
+                    <p class="font-2 h2">Akad Nikah</p>
+                    <hr class="my-2">
+                    <p class="font-2">Rabu, 8 November 2023 <br> Pukul : 09.00 WIB - Selesai </p>
+                </div>
+
+                <div class="col-md-6 text-center my-1">
+                    <p class="font-2 h2">Denah Lokasi</p>
+                    <hr class="my-2">
+                    <p class="font-2">Jl. Tugu Barat No. 22, Sampang, Cilacap <br>
+                        <small>Mie Ayam & Bakso Raja / AFComputer</small>
+                    </p>
+                </div>
+
+                <div class="col-md-12 text-center my-1">
+                    <iframe class="border border-1 border-dark rounded"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.101695426447!2d109.19577819999999!3d-7.563890499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6543ee4a12e04f%3A0xb781dd68eccb2ff0!2sAF%20Computer!5e0!3m2!1sid!2sid!4v1697866748375!5m2!1sid!2sid"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-md-12 text-center my-1">
+                    <a href="#" target="_blank" class="btn btn-sm bg-dark bg-gradient text-light w-100">Lihat
+                        Maps</a>
+                </div>
+            </div>
+    </section>
+
+    <section id="end" class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center font-2">&copy; All Right Reserved 2023 - Adhiz Marz <br> AFComputer
+                        Sampang</p>
+                </div>
+            </div>
     </section>
 
     <!-- Script -->
