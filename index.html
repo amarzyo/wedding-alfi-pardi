@@ -5,78 +5,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alfi & Pardi Wedding</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body class="bg-light">
-    <!-- Modal -->
     <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content bg-light">
-                <div class="modal-body text-center myModal ">
-                    <p class="fs-5 fw-bold font-2 text-end">Wedding Invitation</p>
-                    <p class="h1 fw-bold font-1 my-5" style="font-size: 50px;">Alfiaturrohmah <br> & <br> Supardi</p>
-                    <p class="h6 fw-bold font-2 mb-3">Akan melangsungkan pernikahan dalam:</p>
-                    <p class="h6 fw-bold font-2 mb-3 text-success" id="countdown"></p>
-                    <p class="h6 fw-bold font-2 mt-5">Mengharap Kehadiran Saudara/i</p>
-                    <p class="h6 fw-bold font-2 " style="font-size: 10px;">Maaf bila ada salah tulis nama</p>
-                    <p class="h6 fw-bold font-2 my-4">Alfi</p>
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-body d-flex flex-column align-items-center justify-content-center text-center">
+                    <img src="img/flo1.png" class="pt-1" height="75">
+                    <p class="fs-5 fw-bold font-2">Wedding Invitation</p>
+                    <p class="h1 fw-bold font-1 my-3" style="font-size: 50px;">Alfiaturrohmah <br> & <br> Supardi
+                    </p>
+                    <p class="h6 fw-bold font-2" style="font-size: 15px;">Akan melangsungkan pernikahan dalam:</p>
+                    <p class="h6 fw-bold font-2 text-warning" id="countdown"></p>
+                    <p class="h6 fw-bold font-2" style="font-size: 15px;">Mengharap Kehadiran Saudara/i</p>
+                    <p class="h6 fw-bold font-2" style="font-size: 10px;">Maaf bila ada salah tulis nama</p>
+                    <p class="h6 fw-bold font-2">Alfi</p>
                 </div>
                 <div class="modal-footer border-0">
-                    <button type="button" class="btn bg-secondary bg-gradient text-light mx-auto fw-bold"
-                        data-bs-dismiss="modal">Buka Undangan</button>
+                    <button type="button" class="btn btn-light mx-auto fw-bold" onclick="toggleMusic()"
+                        data-bs-dismiss="modal">Buka
+                        Undangan</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar bg-dark text-center" data-bs-theme="dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="hero" class="text-dark">
-        <div class="container">
-            <p class="h1 fw-bold font-2 text-center pt-3" style="font-size: 20px;">Wedding Invitation</p>
-            <p class="h1 fw-bold font-1 text-center" style="font-size: 50px;">Alfiaturrohmah <br> & <br> Supardi</p>
+    <section id="hero" class="text-dark vh-100">
+        <div class="container text-center">
+            <img src="img/flo.png" class="pt-2" height="75" alt="">
+            <p class="h1 fw-bold font-2 mb-3" style="font-size: 20px;">
+                Wedding Invitation</p>
+            <p class="h1 fw-bold font-1" style="font-size: 50px;">Alfiaturrohmah</p>
+            <img src="/img/love.png" width="30" height="30" class="img-fluid rounded-pill" alt="...">
+            <p class="h1 fw-bold font-1" style="font-size: 50px;">Supardi</p>
+            <img src="img/flo.png" class="position-absolute bottom-0 start-50 translate-middle-x pt-2" height="75">
         </div>
     </section>
 
     <section id="home" class="bg-dark text-light">
         <div class="container">
+
             <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
-                    <p class="font-2 h5 my-3 border bg-light text-dark py-2 rounded">Muqodimah</p>
-                    <p class="text-light">Assalamu'alaikum Wr.Wb <br> Dengan memohon Rahmat dan Ridlo Allow
-                        ST, Kami bermaksud menyelenggarakan resepesi pernikahan kami.
+
+                <div class="col-md-12 text-center my-1" data-aos="fade-left">
+                    <img src="img/flo1.png" class="pt-1" height="75">
+                    <p class="font-2 h5 my-3 border bg-light text-dark mt-0 rounded">Muqodimah</p>
+                    <p class="text-light">Assalamu'alaikum Wr.Wb <br> Dengan memohon Rahmat dan Ridlo Alloh
+                        SWT, Kami bermaksud menyelenggarakan resepesi pernikahan kami.
                     </p>
                 </div>
 
-                <div class="col-md-6 text-center">
-                    <img src="/img/bg.jpeg" class=" img-fluid rounded-pill my-0" alt="...">
-                    <p class="font-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, non.</p>
+                <div class="col-md-6 text-center my-1" data-aos="fade-right">
+                    <img src="/img/ce.png" class="img-fluid rounded-pill mb-3" alt="...">
+                    <p class="font-2 h1">Alfiaturrohmah</p>
+                    <p class="text-light">Bpk. Sugito Anom Suroto (Alm.) Ibu Rasidah <br> Sampang - Cilacap</p>
                 </div>
 
-                <div class="col-md-6 text-center">
-                    <img src="/img/bg.jpeg" class=" img-fluid rounded-pill my-0" alt="...">
-                    <p class="font-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, non.</p>
+                <div class="col-md-12 text-center my-1" data-aos="fade-left">
+                    <img src="/img/love.png" width="100" height="100" class="img-fluid rounded-pill mb-3" alt="...">
+                </div>
+
+                <div class="col-md-6 text-center my-1" data-aos="fade-right">
+                    <img src="/img/co.png" class="img-fluid rounded-pill mb-3" alt="...">
+                    <p class="font-2 h1">Supardi</p>
+                    <p class="text-light">Bpk. Suratno dan Ibu Rapen (Almh.) <br> Glempang - Cilacap</p>
                 </div>
             </div>
     </section>
@@ -84,17 +81,18 @@
     <section id="acara" class="text-dark">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-12 text-center my-1">
-                    <p class="font-2 h5 my-3 border bg-dark text-light py-2 rounded">Acara Pernikahan</p>
+                <div class="col-md-12 text-center my-1" data-aos="fade-left">
+                    <img src="img/flo1.png" class="pt-1" height="75">
+                    <p class="font-2 h5 my-3 border bg-dark text-light mt-0 rounded">Acara Pernikahan</p>
                 </div>
 
-                <div class="col-md-6 text-center my-1">
+                <div class="col-md-6 text-center my-1" data-aos="fade-right">
                     <p class="font-2 h2">Akad Nikah</p>
                     <hr class="my-2">
-                    <p class="font-2">Rabu, 8 November 2023 <br> Pukul : 09.00 WIB - Selesai </p>
+                    <p class="font-2">Rabu, 8 November 2023 <br> Pukul : 09.00 WIB - Selesai <br> KUA Sampang </p>
                 </div>
 
-                <div class="col-md-6 text-center my-1">
+                <div class="col-md-6 text-center my-1" data-aos="fade-left">
                     <p class="font-2 h2">Denah Lokasi</p>
                     <hr class="my-2">
                     <p class="font-2">Jl. Tugu Barat No. 22, Sampang, Cilacap <br>
@@ -102,17 +100,13 @@
                     </p>
                 </div>
 
-                <div class="col-md-12 text-center my-1">
+                <div class="col-md-12 text-center my-1" data-aos="fade-right">
                     <iframe class="border border-1 border-dark rounded"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.101695426447!2d109.19577819999999!3d-7.563890499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6543ee4a12e04f%3A0xb781dd68eccb2ff0!2sAF%20Computer!5e0!3m2!1sid!2sid!4v1697866748375!5m2!1sid!2sid"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="col-md-12 text-center my-1">
-                    <a href="#" target="_blank" class="btn btn-sm bg-dark bg-gradient text-light w-100">Lihat
-                        Maps</a>
-                </div>
             </div>
     </section>
 
@@ -126,47 +120,13 @@
             </div>
     </section>
 
+    <button id="playButton" class="btn btn-light btn-sm floating-button"><i class="bi bi-play-circle"></i></button>
+    <audio id="music" src="audio.mp3" preload="auto"></audio>
+
     <!-- Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
-
-    <!-- Modal onLoad  -->
-    <script>
-        // Fungsi untuk menampilkan modal saat halaman dimuat
-        window.onload = function () {
-            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-            myModal.show();
-        }
-    </script>
-
-    <!-- Countdown -->
-    <script>
-        // Tanggal akhir yang ingin Anda hitung mundur
-        const endDate = new Date("2023-11-8 08:00:00").getTime();
-
-        // Memperbarui hitung mundur setiap 1 detik
-        const countdown = setInterval(function () {
-            const now = new Date().getTime();
-            const distance = endDate - now;
-
-            // Menghitung hari, jam, menit, dan detik
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Menampilkan hasil di elemen dengan id "countdown"
-            const countdownElement = document.getElementById("countdown");
-            countdownElement.innerHTML = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
-
-            // Jika hitung mundur selesai, hentikan interval
-            if (distance < 0) {
-                clearInterval(countdown);
-                countdownElement.innerHTML = "Waktu hitung mundur telah berakhir!";
-            }
-        }, 1000); // Setiap 1 detik
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

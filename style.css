@@ -22,7 +22,11 @@
   background-image: url("img/wedding.png");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 90vh;
-  position: relative;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
 }
